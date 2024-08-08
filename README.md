@@ -1,0 +1,3 @@
+# EnteroFlow
+
+NextFlow pipeline 
