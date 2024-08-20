@@ -4,7 +4,7 @@
 
 NextFlow pipeline 
 
-Purpose
+<h1>Purpose<h1>
 
 Enteroflow is a bioinformatics workflow designed to automate and execute an in-Depth characterization of E. faecium/faecalis from short read sequencing. 
 It has been thought for the “end-to-end” analysis of raw data, by efficiently coordinating raw data collection, quality control, de-novo assembly, sequence-typing, and genomic characterization tools for virulence and AMR (Antimicrobic Resistance) detection.
