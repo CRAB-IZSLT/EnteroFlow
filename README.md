@@ -107,7 +107,7 @@ The pipeline can perform the following procedures:
 
 # Usage
 
-The standard command for running the pipeline is as follows: \n
+The standard command for running the pipeline is as follows: 
 	
  nextflow run entero.nf --reads “/path/to/raw_reads” \
  				    --outdir “/path/to/store/final_results” \
