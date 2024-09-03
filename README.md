@@ -21,7 +21,7 @@ Main folders such “Conda”, “Scripts”, “Modules”, “Configs”, “D
 
 To run the overall steps, you will need Nextflow installed as well as either Conda, Java, R, Blast and KMA. 
 # Install Nextflow
-         curl -s https://get.nextflow.io | bash
+               curl -s https://get.nextflow.io | bash
            
          #Make Nextflow executable
 	       chmod +x nextflow
@@ -33,7 +33,7 @@ To run the overall steps, you will need Nextflow installed as well as either Con
 	       nextflow info
 
 # Install Conda
-	       mkdir -p ~/miniconda3
+	 mkdir -p ~/miniconda3
 
          wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 
@@ -77,8 +77,8 @@ To run the overall steps, you will need Nextflow installed as well as either Con
          sudo apt-get install ncbi-blast+
 
 # Install KMA
-	       sudo apt install make
-	       sudo apt install build-essential
+	 sudo apt install make
+	 sudo apt install build-essential
 
          sudo apt update
          sudo apt upgrade
@@ -107,13 +107,14 @@ The pipeline can perform the following procedures:
 
 # Usage
 
-The standard command for running the pipeline is as follows:
-	nextflow run entero.nf --reads “/path/to/raw_reads” \
+The standard command for running the pipeline is as follows: \n
+	
+ nextflow run entero.nf --reads “/path/to/raw_reads” \
  				    --outdir “/path/to/store/final_results” \
    				  --temporary_quast_dir “/path/to/temporary_quast_results” \
 				    --temporary_fasta_dir  “/path/to/temporary_fasta_results” \ 
 				    --point_results_dir “/path/to/temporary_points_results” \  
-			      --amrfinder_results_dir “/path/to/temporary_amrfinder_results” \   
+			            --amrfinder_results_dir “/path/to/temporary_amrfinder_results” \   
 				    --threads “int” \   
 				    --update_db “yes” \  
 				    --codes_file “/path/to/save/ids_isolates_file.txt” \ 
