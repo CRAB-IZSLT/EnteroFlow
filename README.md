@@ -129,6 +129,8 @@ The standard command for running the pipeline is as follows:
 	
 				    -bg
 
+
+
 -reads >>> mandatory, it indicates folder the reads are located in;
 -outdir >>> mandatory, it denotes where storing the final results;
 -temporary_quast_dir >>> mandatory, it implies where storing the quast temporary results;
