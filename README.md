@@ -21,9 +21,9 @@ Main folders such “Conda”, “Scripts”, “Modules”, “Configs”, “D
 
 To run the overall steps, you will need Nextflow installed as well as either Conda, Java, R, Blast and KMA. 
 # Install Nextflow
-	curl -s https://get.nextflow.io | bash
+	       curl -s https://get.nextflow.io | bash
            
-         #Make Nextflow executable
+               #Make Nextflow executable
 	       chmod +x nextflow
 	
 	       #Move Nextflow int an executable path
