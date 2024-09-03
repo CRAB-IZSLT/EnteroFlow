@@ -109,11 +109,11 @@ The pipeline can perform the following procedures:
 
 The standard command for running the pipeline is as follows: 
 	
- nextflow run entero.nf --reads “/path/to/raw_reads” \/
+ 				    nextflow run entero.nf --reads “/path/to/raw_reads” /
  
  				    --outdir “/path/to/store/final_results” /
 	 
-   				  --temporary_quast_dir “/path/to/temporary_quast_results” /
+   				    --temporary_quast_dir “/path/to/temporary_quast_results” /
 	 
 				    --temporary_fasta_dir  “/path/to/temporary_fasta_results” /
 	
