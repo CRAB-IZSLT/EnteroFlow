@@ -24,50 +24,60 @@ To run the overall steps, you will need Nextflow installed as well as either Con
 	       curl -s https://get.nextflow.io | bash
 	
  	       #Make Nextflow executable
+	 
 	       chmod +x nextflow
 	
 	       #Move Nextflow int an executable path
+	
 	       sudo mv nextflow /usr/local/bin
 	
 	       #Confirm that Nextflow is installed correctly
+	
 	       nextflow info
 
 # Install Conda
-	 mkdir -p ~/miniconda3
+	       mkdir -p ~/miniconda3
   
-  	 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+  	       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 
-         bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+               bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 
-         rm -rf ~/miniconda3/miniconda.sh
+               rm -rf ~/miniconda3/miniconda.sh
 
 	       ~/miniconda3/bin/conda init bash
-         ~/miniconda3/bin/conda init zsh
+               ~/miniconda3/bin/conda init zsh
 
 # Install Java
 	       sudo apt install openjdk-19-jdk
 
 	       #Confirm that Java is installed correctly
+	
 	       java -version
 
 # Install R
 	       wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
                 
 	       #Update indices
+	
 	       sudo apt install -f ./rstudio-2023.12.1-402-amd64.deb
+	
 	       #Install two helper packages we need	
-   	     sudo apt install --no-install-recommends software-properties-common dirmngr
+	
+   	       sudo apt install --no-install-recommends software-properties-common dirmngr
 
 	       #Add the signing key (by Michael Rutter) for these repos
 	       #To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
 	       #Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
+	
 	       wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | 
-         sudo tee -a /etc/apt/trusted.gpg.d/   cran_ubuntu_key.asc
+               sudo tee -a /etc/apt/trusted.gpg.d/   cran_ubuntu_key.asc
 
 	       #Add the R 4.0 repo from CRAN -- adjust 'focal' to 'groovy' or 'bionic' as needed
+	
 	       sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 	     
 	       #Install r-base language
+	
 	       sudo apt install --no-install-recommends r-base
 	       sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
 
