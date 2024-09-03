@@ -111,21 +111,21 @@ The standard command for running the pipeline is as follows:
 	
  nextflow run entero.nf --reads “/path/to/raw_reads” \/
  
- 				    --outdir “/path/to/store/final_results” \/
+ 				    --outdir “/path/to/store/final_results” /
 	 
-   				  --temporary_quast_dir “/path/to/temporary_quast_results” \/
+   				  --temporary_quast_dir “/path/to/temporary_quast_results” /
 	 
-				    --temporary_fasta_dir  “/path/to/temporary_fasta_results” \/
+				    --temporary_fasta_dir  “/path/to/temporary_fasta_results” /
 	
-				    --point_results_dir “/path/to/temporary_points_results” \/
+				    --point_results_dir “/path/to/temporary_points_results” /
 	
-			            --amrfinder_results_dir “/path/to/temporary_amrfinder_results” \/
+			            --amrfinder_results_dir “/path/to/temporary_amrfinder_results” /
 	       
-				    --threads “int” \/
+				    --threads “int” /
 	
-				    --update_db “yes” \/
+				    --update_db “yes” /
 	
-				    --codes_file “/path/to/save/ids_isolates_file.txt” \/
+				    --codes_file “/path/to/save/ids_isolates_file.txt” /
 	
 				    -bg
 
