@@ -132,14 +132,23 @@ The standard command for running the pipeline is as follows:
 
 
 -reads >>> mandatory, it indicates folder the reads are located in;
+
 -outdir >>> mandatory, it denotes where storing the final results;
+
 -temporary_quast_dir >>> mandatory, it implies where storing the quast temporary results;
+
 -temporary_fasta_dir >>> mandatory, it signifies where saving the temporary fasta assemblies;
+
 -point_results_dir >>> mandatory, it means where storing the temporary points results;
+
 -amrfinder_results_dir >>> mandatory, it represents where saving the temporary amrfinder results;
+
 -threads >>> specifies how many threads to use ---type: INT, default: 0;
+
 -update_db >>> it says if updating amrfinder, resfinder, plasmidfinder, virulencefinder, amrfinder, pointfinder databases before analyses ---type: BOOLEAN, default: “no”;
+
 -codes_file >>> mandatory, it denotes where storing the IDs of each isolate file;
+
 -bg >>> denotes whether running pipeline in background;
 
 # Output
