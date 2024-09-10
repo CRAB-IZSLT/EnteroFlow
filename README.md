@@ -3,7 +3,7 @@
 </div>
 
 # EnteroFlow is developed by the National Reference Laboratory for Antimicrobial Resistance (NRL-AR) in Italy. 
-## At the moment is still under development and will be available soon. Please send an email to elena.diaconu@izslt.com to be informed when it becomes available.
+## At the moment is still under development and will be available soon. Please send an email to elena.diaconu@izslt.it to be informed when it becomes available.
 
 
 # Purpose
