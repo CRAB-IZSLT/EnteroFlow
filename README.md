@@ -1,4 +1,6 @@
-![Project Logo](https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Slide1.jpg)
+<div align="center">
+  <img src="https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Slide1.jpg" alt="Project Logo" width="200" />
+</div>
 
 # EnteroFlow is developed by the National Reference Laboratory for Antimicrobial Resistance (NRL-AR) in Italy. 
 ## At the moment is still under development and will be available soon. Please send an email to elena.diaconu@izslt.com to be informed when it becomes available.
@@ -11,6 +13,8 @@ It has been thought for the “end-to-end” analysis of raw data, by efficientl
 Specifically, it features mining for antibiotic resistance genes and replicons, virulence factors, resistance-associated point mutations, as well as the Multi-locus Sequence Typing for each isolate.
 
 Finally, Enteroflow provides the specialized user with an interactive report that gives an overview of the genomic results and facilitates the reporting phase.
+
+![Descrizione alternativa dell'immagine](https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Enteroflowchart.jpg)
 
 
 ### Who we are
