@@ -14,7 +14,7 @@ Specifically, it features mining for antibiotic resistance genes and replicons, 
 
 Finally, Enteroflow provides the specialized user with an interactive report that gives an overview of the genomic results and facilitates the reporting phase.
 
-![Descrizione alternativa dell'immagine](https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Enteroflowchart.jpg)
+![Descrizione alternativa dell'immagine](https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Enteroflowchart(1).png)
 
 
 ### Who we are
