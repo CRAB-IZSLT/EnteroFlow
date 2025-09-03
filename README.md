@@ -19,7 +19,7 @@ The main directory is organized into five subfolders:
 
 2. **CONFIGS**  
    Includes the Nextflow configuration file, parameter files, visualization settings, and a `.txt` file listing microbial species.  
-   Also contains a `prova_run` file with example launch commands and required `export` statements.
+  
 
 3. **DATABASES**  
    Stores the databases for **PointFinder**, **ResFinder**, and **DisinFinder**, which can be optionally updated during pipeline execution.
