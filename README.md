@@ -2,17 +2,13 @@
   <img src="https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Enteroflowchart(1).png" alt="Project Logo" width="700" />
 </div>
 
-**EnteroFlow** is an automated pipeline for the _in silico_ characterization of _Enterococcus faecium/faecalis_ isolates from [Illumina](http://www.illumina.com/) Paired End reads, developed in [Nextflow](https://www.nextflow.io/).
-
-
-
-
-Enteroflow is a bioinformatics workflow designed in **Nextflow** to automate and execute an in-depth characterization of _**E. faecium/faecalis**_ isolates, originating from short-read ILLUMINA sequencing. 
-It has been intended for the “end-to-end” analysis of such isolates, efficiently coordinating raw data collection, quality control, de-novo assembly, sequence-typing, and genomic characterization tools for virulence and AMR (Antimicrobic Resistance) detection.
+### _**EnteroFlow** is an automated pipeline for the _in silico_ characterization of <ins>_**Enterococcus faecium/faecalis**_</ins> isolates, developed in [Nextflow](https://www.nextflow.io/) to automate and execute an in-depth characterization starting from [Illumina](http://www.illumina.com/) Paired End short reads. It has been designed for the “end-to-end” analysis of such isolates, efficiently coordinating raw data collection, quality control, de-novo assembly, sequence-typing, and genomic characterization tools for virulence and AMR (Antimicrobic Resistance) detection._
+<br/>
+<br/>
 
 
 # 📁 Folder Structure
-The main directory is organized into five subfolders:
+The pipeline's main directory [enteroflow](enteroflow/) is organized into five subfolders:
 
 1. **CONDA**  
    Contains `.txt` and `.yaml` files for creating specific Conda environments.
@@ -30,9 +26,12 @@ The main directory is organized into five subfolders:
 5. **SCRIPTS**  
    Includes the main workflow script `entero.nf`, which orchestrates the entire pipeline by linking all modules.  
    Also contains necessary `.sh` and `.R` scripts used throughout the workflow.
+<br/>
+<br/>
 
 
-# 📦 User Requirements
+# 🛠️ Initial Setup
+## 📦 User Requirements
 
 To run Enteroflow, users must be familiar with command line interfaces and have the following tools pre-installed on their operating system:
 
@@ -44,17 +43,16 @@ To run Enteroflow, users must be familiar with command line interfaces and have 
 - [BLAST](https://doi.org/10.1016/s0022-2836(05)80360-2)  
 - [KMA](https://doi.org/10.1186/s12859-018-2336-6)  
 
+## 1. [Download or clone](https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github) this repository in your selected local directory.<br/>
+```bash
+git clone  https://github.com/CRAB-IZSLT/EnteroFlow.git
+```
 
-# 🛠️ Initial Setup
-
-1. Create a main directory and copy this repository into it.
-2. Set environment variables
-3. Launch the main script from inside the chosen directory.
-
-## Required Environment Variables
+## 2. Set environment variables:<br/>
+### Required Environment Variables
 
 Before running, the following 5 environment variables **MUST** be exported:  
-_must be set by the user for every new bash session or permanently added to the `.bashrc` file in your `$HOME` directory for all future sessions_
+_(must be set by the user for every new bash session or permanently added to the `.bashrc` file in your `$HOME` directory for all future sessions)_
 
 ```bash
 export TEST="/path/to/your/chosen/workflow/directory/"
@@ -64,26 +62,36 @@ export KMA_INDEX="/path/to/executable/kma_index"
 export READS="path/to/stored/reads"
 ```
 
-## Parameters
-
-- By default, the **Mashtree** and **Kraken** processes are disabled: Enteroflow runs with `--tree "no"` and `--kraken "no"` parameters if not specified.  
-  To enable them, 2 additional environment variables must be exported before setting them to "yes"
+### Optional Environment Variables
 
 ```bash
 export KRAKEN="/path/to/executable/kraken"
 export KRAKEN_DB="/path/to/kraken/database"
 ```
 
-⚠️ When launching **Enteroflow** for the first time, users **MUST** set the `--update_db` parameter to `"yes"` to download the required databases. ⚠️ 
+By default, the **Mashtree** and **Kraken** modules are disabled: Enteroflow runs with `--tree "no"` and `--kraken "no"` parameters if not specified.<br/>
+To enable them, the 2 optional environment variables must be exported beforehand<br/>
 
-# 📥 INPUT:  
-🧬 Paired-end Illumina reads of _**E. faecium/faecalis**_ isolates in FASTQ format is the only required input.
+<br/>
 
-Example run command: 
+## 3. Launch the main script from inside the chosen directory.<br/>
+ 
+⚠️ Upon initial use of **Enteroflow**, users **MUST** set the `--update_db` parameter to `"yes"` to download the required databases. ⚠️ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(This becomes optional for subsequent runs, updating databases only when requested)*
+<br/>
+
+:rocket: Sample startup command: 
 ```bash
 $NEXTFLOW run scripts/entero.nf --threads 16 --update_db "yes" -c configs/nextflow.config --tree "no" --kraken "no" -bg`
 ```
-**note** that Enteroflow-specific parameters are set with a double hyphen (like --tree or --threads) while generic Nextflow-parameters use a single hyphen (like -bg used to run the pipeline in background)
+**note** that <ins>Enteroflow-specific parameters</ins> are set with a double hyphen (like --tree or --threads) while generic <ins>Nextflow-parameters</ins> use a single hyphen (like -bg enables background running)
+<br/>
+<br/>
+
+
+# 📥 INPUT:  
+🧬 Paired-end Illumina reads of _**E. faecium/faecalis**_ isolates in FASTQ format `(.fastq / .fastq.gz)` are the <ins>__ONLY__</ins> required input.
+
 
 # 📤 OUTPUT:
 
