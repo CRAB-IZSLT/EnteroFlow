@@ -80,7 +80,11 @@ export KRAKEN_DB="/path/to/kraken/database"
 # 📥 INPUT:  
 🧬 Paired-end Illumina reads of _**E. faecium/faecalis**_ isolates in FASTQ format is the only required input.
 
-Example of minimum run command: `$NEXTFLOW run scripts/entero.nf --threads 16 --update_db "yes" -c configs/nextflow.config --tree "no" --kraken "no" -bg'`
+Example run command: 
+```bash
+$NEXTFLOW run scripts/entero.nf --threads 16 --update_db "yes" -c configs/nextflow.config --tree "no" --kraken "no" -bg`
+```
+**note** that Enteroflow-specific parameters are set with a double hyphen (like --tree or --threads) while generic Nextflow-parameters use a single hyphen (like -bg used to run the pipeline in background)
 
 # 📤 OUTPUT:
 
