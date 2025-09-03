@@ -1,0 +1,14 @@
+nextflow run entero.nf --threads 8 \
+		       --update_db "yes" \
+		       -c configs/nextflow.config \
+		       -bg
+
+
+
+
+
+
+
+
+
+

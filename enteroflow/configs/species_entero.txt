@@ -1,0 +1,3 @@
+enterococcus_faecalis        
+enterococcus_faecium   
+
