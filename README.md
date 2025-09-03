@@ -111,6 +111,7 @@ These include information on **quality of assembly**, **Multilocus Sequence Typi
   Other files (e.g., trimmed reads, MultiQC reports) are stored in the **`/work`** directory and accessed via symlinks.  
   **❗Ensure all necessary files have been saved before deleting the `/work` folder.❗**  
   *this behaviour may be overridden with the `-process.stageOutMode copy` option when launching Enteroflow*
+- [SPAdes'](https://github.com/ablab/spades) module has been limited to a maximum of **two concurrent assemblies** via the `maxForks= 2` directive. This restriction was intended to ensure seamless execution on less powerful systems and may be changed according to specific needs. 
 
 
 
