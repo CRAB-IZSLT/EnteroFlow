@@ -107,7 +107,7 @@ These include information on **quality of assembly**, **Multilocus Sequence Typi
 
 ## ⚠️ Important Notes
 
-- The only folders containing actual files (not as symlinks) are `/data/annotation`,`fasta_temporary` and `all_kraken_folder`.  
+- The only folders containing actual files (not only symlinks) are `/data/annotation`,`fasta_temporary` and `all_kraken_folder`.  
   Other files (e.g., trimmed reads, MultiQC reports) are stored in the **`/work`** directory and accessed via symlinks.  
   **❗Ensure all necessary files have been saved before deleting the `/work` folder.❗**  
   *this behaviour may be overridden with the `-process.stageOutMode copy` option when launching Enteroflow*
