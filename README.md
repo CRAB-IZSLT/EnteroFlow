@@ -74,8 +74,7 @@ export KRAKEN="/path/to/executable/kraken"
 export KRAKEN_DB="/path/to/kraken/database"
 ```
 
-- When launching **Enteroflow** for the first time, the `--update_db' parameter MUST be set to '"yes"` to download the necessary databases.  
-  (This is optional for subsequent runs, updating databases only when requested)
+⚠️ When launching **Enteroflow** for the first time, users **MUST** set the `--update_db` parameter to `"yes"` to download the required databases. ⚠️ 
 
 # 📥 INPUT:  
 🧬 Paired-end Illumina reads of _**E. faecium/faecalis**_ isolates in FASTQ format is the only required input.
@@ -110,11 +109,15 @@ These include information on **quality of assembly**, **Multilocus Sequence Typi
 
 # Who we are
 
-The National Reference Laboratory for Antimicrobial Resistance (NRL-AR) in Italy, at IZSLT, has in recent years made considerable effort in programming monitoring and reporting activities concerning antimicrobial resistance in the veterinary field. It has a ‘One Health’ perspective and functions for the benefit of animal health and veterinary public health. It operates with the help of a national network, mainly consisting Veterinary Public Institutes Network (IIZZSS – Experimental Animal Disease Prevention Institutes), the National Reference Laboratories for zoonotic bacterial agents, and collaborates with the Istituto Superiore della Sanità (National Institute of Health). It is also part of an international network that monitors and harmonizes analytical methods, as well as reports and interprets monitoring data for the benefit of public health in the EU Member State, Italy, and the European Commission.
-https://www.izslt.it/crab/en/
+**The National Reference Laboratory for Antimicrobial Resistance (NRL-AR)** in Italy, based at IZSLT in Rome, has made significant efforts in recent years to plan, monitor, and report on antimicrobial resistance in the veterinary sector. Operating from a One Health perspective, the laboratory supports both animal health and veterinary public health.
 
-Istituto Zooprofilattico Sperimentale del Lazio e della Toscana "M. Aleandri"  Rome
+The NRL-AR operates in collaboration with a national network which includes the Veterinary Public Institutes Network (IIZZSS – all Italian Experimental Institutes for Animal Disease Prevention), the National Reference Laboratories for zoonotic bacterial agents, and the Istituto Superiore di Sanità (National Institute of Health).
+
+On an international level, the laboratory is part of a broader network that focuses on harmonizing analytical methods and interpreting monitoring data. These efforts contribute to public health initiatives in Italy and support the European Commission's objectives across EU Member States.
+
+**Istituto Zooprofilattico Sperimentale del Lazio e della Toscana "M. Aleandri"  Rome**
 https://www.izslt.it/
 
-#### Dedicated funding for EnteroFlow
-NextGeneration EU-MUR PNRR Extended Partnership Initiative on Emerging Infectious Diseases (Project no. PE00000007, INF-ACT, PE13 INF-ACT, Node 4 and Node 3).​
+
+
+**Dedicated funding for EnteroFlow**: NextGeneration EU-MUR PNRR Extended Partnership Initiative on Emerging Infectious Diseases (Project no. PE00000007, INF-ACT, PE13 INF-ACT, Node 4 and Node 3).​
