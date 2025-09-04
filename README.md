@@ -35,24 +35,24 @@ The pipeline's main directory [enteroflow](enteroflow/) is organized into five s
 
 To run Enteroflow, users must be familiar with command line interfaces and have the following tools pre-installed on their operating system:
 
-- [Nextflow](https://www.nextflow.io/) 
-- [Conda](https://github.com/conda/conda/releases/tag/25.1.1) **⚠️ version 25.1.1 or previous**  
+- [**Nextflow**](https://www.nextflow.io/) 
+- [**Conda**](https://github.com/conda/conda/releases/tag/25.1.1) **⚠️ version 25.1.1 or previous**  
   (due to deprecated commands in latest versions)
-- [Java](https://www.oracle.com/java/technologies/downloads/)  
-- [R](https://www.r-project.org/)  
-- [BLAST](https://doi.org/10.1016/s0022-2836(05)80360-2)  
-- [KMA](https://doi.org/10.1186/s12859-018-2336-6)  
+- [**Java**](https://www.oracle.com/java/technologies/downloads/)  
+- [**R**](https://www.r-project.org/)  
+- [**BLAST**](https://doi.org/10.1016/s0022-2836(05)80360-2)  
+- [**KMA**](https://doi.org/10.1186/s12859-018-2336-6)  
 
 ## 1. [Download or clone](https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github) this repository in your selected local directory.<br/>
 ```bash
-git clone  https://github.com/CRAB-IZSLT/EnteroFlow.git
+git clone  https://github.com/CRAB-IZSLT/EnteroFlow/enteroflow.git
 ```
 
 ## 2. Set environment variables:<br/>
 ### Required Environment Variables
 
 Before running, the following 5 environment variables **MUST** be exported:  
-_(must be set by the user for every new bash session or permanently added to the `.bashrc` file in your `$HOME` directory for all future sessions)_
+_(these must be set by the user for every new bash session or permanently added to the `.bashrc` file in your `$HOME` directory for all future sessions)_
 
 ```bash
 export TEST="/path/to/your/chosen/workflow/directory/"
@@ -113,7 +113,8 @@ These include information on **quality of assembly**, **Multilocus Sequence Typi
   *this behaviour may be overridden with the `-process.stageOutMode copy` option when launching Enteroflow*
 - [SPAdes'](https://github.com/ablab/spades) module has been limited to a maximum of **two concurrent assemblies** via the `maxForks= 2` directive. This restriction was intended to ensure seamless execution on less powerful systems and may be changed according to specific needs. 
 
-
+## 📈 Benchmarking
+As published in our article regarding Enteroflow's presentation and benchmarking, 10 random _Enterococcus faecium/faecalis_ isolates have been selected to test perfomance and results between different pipelines. These ILLUMINA PE raw reads are publicly available for download in the [**European Nucleotide Archive**](https://www.ebi.ac.uk/ena/browser/search) under project number **PRJEB96944**.
 
 
 # Who we are
