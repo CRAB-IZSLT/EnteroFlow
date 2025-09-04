@@ -115,7 +115,12 @@ These include information on **quality of assembly**, **Multilocus Sequence Typi
 
 ## 📈 Benchmarking
 As published in our article regarding Enteroflow's presentation and benchmarking, 10 random _Enterococcus faecium/faecalis_ isolates have been selected to test perfomance and results between different pipelines. These ILLUMINA PE raw reads are publicly available for download in the [**European Nucleotide Archive**](https://www.ebi.ac.uk/ena/browser/search) under project number **PRJEB96944**.
-
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 # Who we are
 
