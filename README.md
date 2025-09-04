@@ -8,22 +8,22 @@
 
 
 # 📁 Folder Structure
-The pipeline's main directory [enteroflow](enteroflow/) is organized into five subfolders:
+The pipeline's main directory [**(enteroflow)**](enteroflow/) is organized into five subfolders:
 
-1. **CONDA**  
+1. [**CONDA**](enteroflow/conda)  
    Contains `.txt` and `.yaml` files for creating specific Conda environments.
 
-2. **CONFIGS**  
+2. [**CONFIGS**](enteroflow/configs)  
    Includes the Nextflow configuration file, parameter files, visualization settings, and a `.txt` file listing microbial species.  
   
 
-3. **DATABASES**  
+3. [**DATABASES**](enteroflow/databases)  
    Stores the databases for **PointFinder**, **ResFinder**, and **DisinFinder**, which can be optionally updated during pipeline execution.
 
-4. **MODULES**  
+4. [**MODULES**](enteroflow/modules)  
    Contains all Nextflow modules (individual scripts and bioinformatics tools) that are called within the main script `entero.nf`, located in the `SCRIPTS` folder.
 
-5. **SCRIPTS**  
+5. [**SCRIPTS**](enteroflow/scripts)  
    Includes the main workflow script `entero.nf`, which orchestrates the entire pipeline by linking all modules.  
    Also contains necessary `.sh` and `.R` scripts used throughout the workflow.
 <br/>
