@@ -2,7 +2,11 @@
   <img src="https://github.com/CRAB-IZSLT/EnteroFlow/blob/main/Enteroflowchart(1).png" alt="Project Logo" width="700" />
 </div>
 
-### _**EnteroFlow** is an automated pipeline for the _in silico_ characterization of <ins>_**Enterococcus faecium/faecalis**_</ins> isolates, developed in [Nextflow](https://www.nextflow.io/) to automate and execute an in-depth characterization starting from [Illumina](http://www.illumina.com/) Paired End short reads. It has been designed for the “end-to-end” analysis of such isolates, efficiently coordinating raw data collection, quality control, de-novo assembly, sequence-typing, and genomic characterization tools for virulence and AMR (Antimicrobic Resistance) detection._
+# Publication: [**Enteroflow: Automated Pipeline for In Silico Characterization of Enterococcus faecium/faecalis Isolates from Short Reads**](https://doi.org/10.3390/ijms26199441)
+
+### _**EnteroFlow** is an automated pipeline for the _in silico_ characterization of <ins>_**Enterococcus faecium/faecalis**_</ins> isolates, developed in [Nextflow](https://www.nextflow.io/) to automate and execute an in-depth characterization starting from [Illumina](http://www.illumina.com/) Paired End short reads. It has been designed for the “end-to-end” analysis of such isolates, efficiently coordinating raw data collection, quality control, de-novo assembly, sequence-typing, and genomic characterization tools for virulence and AMR (Antimicrobic Resistance) detection._ 
+
+
 <br/>
 <br/>
 
@@ -122,6 +126,13 @@ As published in our article regarding Enteroflow's presentation and benchmarking
 </br>
 </br>
 
+## When using Enteroflow, please cite: 
+
+**Smedile, D., Diaconu, E. L., Grelloni, M., Middei, B., Carfora, V., Battisti, A., Alba, P., & Franco, A. (2025). Enteroflow: Automated Pipeline for In Silico Characterization of Enterococcus faecium/faecalis Isolates from Short Reads. International Journal of Molecular Sciences, 26(19), 9441. https://doi.org/10.3390/ijms26199441**
+
+</br>
+</br>
+
 # Who we are
 
 **The National Reference Laboratory for Antimicrobial Resistance (NRL-AR)** in Italy, based at IZSLT in Rome, has made significant efforts in recent years to plan, monitor, and report on antimicrobial resistance in the veterinary sector. Operating from a One Health perspective, the laboratory supports both animal health and veterinary public health.
@@ -132,7 +143,6 @@ On an international level, the laboratory is part of a broader network that focu
 
 **Istituto Zooprofilattico Sperimentale del Lazio e della Toscana "M. Aleandri"  Rome**
 https://www.izslt.it/
-
 
 
 **Dedicated funding for EnteroFlow**: NextGeneration EU-MUR PNRR Extended Partnership Initiative on Emerging Infectious Diseases (Project no. PE00000007, INF-ACT, PE13 INF-ACT, Node 4 and Node 3).​
