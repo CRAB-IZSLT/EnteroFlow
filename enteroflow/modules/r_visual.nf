@@ -12,7 +12,6 @@ process R_VISUAL {
 	path(oggetti_pointfinder)        
 
         output:
-//							///home/utente/Genomica/esercizi_Nextflow/data/annotation      
 
         script:
         """
