@@ -22,7 +22,7 @@ include { R_VISUAL } from "${TEST}/modules/r_visual.nf"
 
 
 
-////////  WORKFLOW DEFINITION, CHANNELS AND HOW THEY ARE CONNECTED EACH OTHERS ////////////// 
+////////  WORKFLOW DEFINITION, CHANNELS AND RECIPROCAL CONNECTIONS ////////////// 
 
 
 workflow {	
@@ -74,7 +74,7 @@ workflow {
 
 }
 
-////////// PRINT EXECUTION, SUCCESS OR ERROR OF PIPELINE ///////////////////////////////////
+////////// PRINT EXECUTION STATUS, SUCCESS OR ENCOUNTERED ERRORS  ///////////////////////////////////
 
         workflow.onComplete {
         println "Pipeline completed at: $workflow.complete"
