@@ -6,16 +6,17 @@ THIRD="$3"    #OUTPUT_DIR_GLOBAL
 FOURTH="$4"   #POINTFINDER_RESULTS
 FIFTH="$5"    #QUAST_TEMPORARY_FOLDER
 SIXTH="$6"    #SPECIE LIST
-#POINT FINDER RUNNING, RESULTS RENAMING AND MOVING TO POINT FINDER FOLDER
+
+# Pointfinder execution, editing and positioning of results in final folder
 
 ##FILE = ${FIRST}				##/home/izslt/nextflow/file.txt         #{RESFINDER_RESGENE_DB}
 
 mkdir ${FOURTH}
 
 
-## DUE CICLI WHILE:
-## QUELLO PIÙ ESTERNO CICLA SU OGNI CAMPIONE (RIGA DEL FILE DEI CODICI), MENTRE IL SECONDO E' PIÙ INTERNO E PER OGNI CAMPIONE
-## EFFETTUA TOT ITERAZIONI DI POINTFINDER PER QUANTE SONO LE SPECIE DI MICORGANISMI LISTATE NEL FILE DELLE SPECIE
+## Nested while loops:
+## the external loop cicles between all samples (using newlines in the sample-list file), while the internal loop cycles through the selected species (species_entero.txt)
+
 
 while read line;
 do
@@ -37,16 +38,17 @@ done < ${FIRST} #${params.codes_file}
 
 
 
-#UNIQUE POINT FINDER FILE CREATION, WITH SAMPLE NAME APPENDING FOR EACH ROW
+#UNIQUE POINTFINDER FILE CREATION, WITH SAMPLE NAME APPENDING FOR EACH ROW
 
 for f in ${FOURTH}/*results*; do awk '{print FILENAME (NF?"\t":"") $0}' ${f}  ;done > ${THIRD}/"pointfinder.txt"
 
 
-# DELETE FASTA TEMPORARY FOLDER, INCLUDING POINT RESULTS FOLDERS FOR EACH SAMPLE
+# DELETE FASTA TEMPORARY FOLDER, INCLUDING POINT RESULTS FOLDERS FOR EACH SAMPLE (not active)
 #rm -r ${SECOND} ${FIFTH}
 
+# DELETE QUAST TEMPORAY FOLDER AND SAMPLE-SPECIFIC POINTFINDER RESULTS FOLDER
 rm -r ${FIFTH} ${FOURTH}
 
-#LEAVE ALL FILES IN OUTPUT FOLDER, EXCEPT THE HTML ONE ( = multiqc html file) 
+#LEAVE ALL FILES IN OUTPUT FOLDER, ONLY REMOVE HTML report ( = multiqc html file) 
 cd  ${THIRD}
 rm *html
