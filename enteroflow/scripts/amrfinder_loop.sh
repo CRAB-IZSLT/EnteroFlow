@@ -7,10 +7,10 @@ FOURTH="$4"   #OUTPUT_DIR_GLOBAL
 FIFTH="$5"    #AMRFINDER_RESULTS
 
 
-#fare ciclo con amrfinder per ogni genoma assemblato#
-#la condizione if..else crea o non crea la cartella AMRfinder_temporary_results#
-#questo nel caso dovessimo rilanciare la pipeline con opzione -resume e Nextflow vedesse che già esiste la cartella#
-#dando quindi errore#
+# Cicles AMRfinder command for every assembled genome. 
+# The if...else condition ensures that the output directory(AMRfinder_temporary_results) is created only if not already present,
+# granting the resumability of the pipeline via the -resume parameter.
+
 
 
 if [ ! -d ${FIFTH} ]
@@ -39,7 +39,7 @@ else
 fi
 
 
-#creare unico file
+# Merging of results in a single .txt file
 
 for f in ${FIFTH}/*results*; do awk '{print FILENAME (NF?"\t":"") $0}' ${f}  ;done > ${FOURTH}/"amrfinder.txt"
 
