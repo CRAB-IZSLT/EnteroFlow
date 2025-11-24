@@ -6,19 +6,15 @@ git clone https://bitbucket.org/genomicepidemiology/disinfinder_db/
 
 #Set approximate environment variables.
 
-# Example of how to set the environment variable in the bash shell.
-#Remember this is only temporary, if you want it set every time you log in you need to add this line to for example your .bashrc file.
+# Example on how to set the environment variables in bash.
+#Remember this is only temporary, should you want them set permanently, add this line to your .bashrc file in the home directory.
 #CGE_RESFINDER_RESGENE_DB="/path/to/some/dir/resfinder_db"
 #CGE_RESFINDER_RESPOINT_DB="/path/to/some/dir/pointfinder_db"
 #CGE_DISINFINDER_DB="/path/to/some/dir/disinfinder_db"
 
+# Indexing DATABASES for usage with KMA. 
+# Inside the directory created from KMA.git, kma_index contains all commands for the installation of the resfinder and pointfinder databases.
 
-
-
-
-
-#INDICIZZARE I DATABASES PER KMA . Vai nella cartella del clone KMA.git per trovare kma_index
-#Sono i comandi che installeranno i databases nuovi di resfinder e pointfinder
 
 
 cd ${TEST}/databases/resfinder_db/
