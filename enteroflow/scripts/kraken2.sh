@@ -1,10 +1,8 @@
-# Script di kraken che sarà opzionale e su richiesta dello user come parametro da riga di comando
-# insieme al comando principale > nextflow run etc. <
-# Lo user dovrà in quel caso ovviamente avere come prerequisiti fondamentali
-# SIA l'applicativo KRAKEN SIA il DATABASE d kraken installato in un path specifico
 
+# Kraken script (optional on user request via command line).
 
-# Le variabili temporanee ${KRAKEN} e ${KRAKEN_DB} sostituiranno rispettivamente
+# Before usage, Kraken and it's database MUST be installed,
+# and their locations MUST be specified by exporting the ${KRAKEN} and ${KRAKEN_DB} variables.
 # > /home/biouser/bin/kraken2-2.1.3/kraken2 < e > /home/biouser/storage/DB/k2_pluspfp_20240605 <
 
 R1="$1"   ## INPUT TRIMMED R1
