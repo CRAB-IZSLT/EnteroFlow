@@ -5,15 +5,12 @@ import sys
 import tempfile
 import subprocess
 
-# TODO:
+# Future implementations will include indipendence from working directory and ability to write output in different locations.
 # Make script independent of current working directory
-# Make script able to store indexed files in a directory not named
-# 'kma_indexing'
 
-# This scripts installs the PointFinder database for using KMA
-# KMA should be installed before running this script
-# The scripts assumes that it is placed together with the ResFinder species
-# directories
+# This scripts installs the PointFinder database to be used by KMA
+# KMA MUST be installed before running this script
+# The scripts assumes it's positioning together with the ResFinder species directory
 #
 # First clone the repository:
 # git clone https://bitbucket.org/genomicepidemiology/resfinder_db.git
